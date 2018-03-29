@@ -9,7 +9,7 @@ import java.util.Objects;
  */
 public class AuthorAssert extends AbstractAssert<AuthorAssert, Author> {
     public AuthorAssert(Author actual) {
-        super(actual, Author.class);
+        super(actual, AuthorAssert.class);
     }
 
     public static AuthorAssert assertThat(Author author) {
@@ -36,7 +36,7 @@ public class AuthorAssert extends AbstractAssert<AuthorAssert, Author> {
         return this;
     }
 
-    public AuthorAssert haLastName(String lastName) {
+    public AuthorAssert hasLastName(String lastName) {
         isNotNull();
 
         if (!Objects.equals(lastName, actual.getLastName())) {
