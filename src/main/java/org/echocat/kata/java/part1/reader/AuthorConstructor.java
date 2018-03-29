@@ -5,7 +5,8 @@ import org.echocat.kata.java.part1.model.Author;
 /**
  * @author Rüdiger Schulz &lt;rs@mindhaq.com&gt;
  */
-public class AuthorConstructor {
+public class AuthorConstructor implements EntityConstructor<Author> {
+    @Override
     public Author createFrom(String[] parts) {
         return Author
                 .builder()
