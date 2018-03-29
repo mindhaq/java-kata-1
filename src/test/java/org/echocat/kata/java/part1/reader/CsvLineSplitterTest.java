@@ -17,7 +17,7 @@ public class CsvLineSplitterTest {
         String line = "null-walter@echocat.org;Paul;Walter";
 
         // when
-        String[] strings = splitter.split(line);
+        String[] strings = splitter.apply(line);
 
         // then
         assertThat(strings).hasSize(3);

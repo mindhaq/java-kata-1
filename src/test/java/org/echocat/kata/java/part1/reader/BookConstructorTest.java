@@ -24,7 +24,7 @@ public class BookConstructorTest {
         };
 
         // when
-        Book book = bookConstructor.createFrom(parts);
+        Book book = bookConstructor.apply(parts);
 
         // then
         assertThat(book.getTitle()).isEqualTo("Genial italienisch");

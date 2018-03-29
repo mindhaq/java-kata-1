@@ -9,7 +9,7 @@ import static org.echocat.kata.java.part1.reader.EntityConstructor.parseAuthors;
  */
 public class MagazineConstructor implements EntityConstructor<Magazine> {
     @Override
-    public Magazine createFrom(String[] parts) {
+    public Magazine apply(String[] parts) {
         return Magazine
                 .builder()
                 .title(parts[0])

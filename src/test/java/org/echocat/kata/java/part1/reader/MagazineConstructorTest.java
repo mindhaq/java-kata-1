@@ -24,7 +24,7 @@ public class MagazineConstructorTest {
         };
 
         // when
-        Magazine magazine = magazineConstructor.createFrom(parts);
+        Magazine magazine = magazineConstructor.apply(parts);
 
         // then
         assertThat(magazine.getTitle()).isEqualTo("Cooking for gourmets");

@@ -9,7 +9,7 @@ import static org.echocat.kata.java.part1.reader.EntityConstructor.parseAuthors;
  */
 public class BookConstructor implements EntityConstructor<Book> {
     @Override
-    public Book createFrom(String[] parts) {
+    public Book apply(String[] parts) {
         return Book
                 .builder()
                 .title(parts[0])
@@ -18,4 +18,5 @@ public class BookConstructor implements EntityConstructor<Book> {
                 .description(parts[3])
                 .build();
     }
+
 }

@@ -7,7 +7,7 @@ import org.echocat.kata.java.part1.model.Author;
  */
 public class AuthorConstructor implements EntityConstructor<Author> {
     @Override
-    public Author createFrom(String[] parts) {
+    public Author apply(String[] parts) {
         return Author
                 .builder()
                 .email(parts[0])

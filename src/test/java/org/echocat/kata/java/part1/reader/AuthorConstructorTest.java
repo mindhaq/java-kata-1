@@ -23,7 +23,7 @@ public class AuthorConstructorTest {
         };
 
         // when
-        Author author = authorConstructor.createFrom(parts);
+        Author author = authorConstructor.apply(parts);
 
         // then
         assertThat(author).isNotNull();
