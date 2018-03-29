@@ -1,6 +1,7 @@
 package org.echocat.kata.java.part1;
 
 import org.echocat.kata.java.part1.model.Author;
+import org.echocat.kata.java.part1.model.Publication;
 import org.junit.Test;
 
 import java.io.IOException;
@@ -20,6 +21,13 @@ public class MainAppUnitTest {
         Map<String, Author> authorMap = mainApp.getDatabase().getAuthorMap();
 
         assertThat(authorMap).hasSize(6);
+    }
+
+    @Test
+    public void main_database_contains_all_publications() {
+        Map<String, Publication> authorMap = mainApp.getDatabase().getPublicationMap();
+
+        assertThat(authorMap).hasSize(14);
     }
 
 }
