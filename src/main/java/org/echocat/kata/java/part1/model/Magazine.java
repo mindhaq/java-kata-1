@@ -10,7 +10,7 @@ import java.util.Set;
  */
 @Data
 @Builder
-public class Magazine implements IsbnLabeled, Titled {
+public class Magazine implements Publication {
     private String title;
     private Set<String> authors;
     private String publishedAt;

@@ -31,7 +31,6 @@ public class MainApp {
     }
 
     private Map<String, Author> readAuthors() throws IOException {
-
         return readEntities(
                 "authors.csv",
                 new AuthorConstructor(),
