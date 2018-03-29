@@ -5,6 +5,7 @@ tmp/
 var/
 *.tmp
 *.bak
+*.iml
 
 ### Java
 hs_err_pid*
