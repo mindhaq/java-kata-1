@@ -1,4 +1,4 @@
-package org.echocat.kata.java.part1;
+package org.echocat.kata.java.part1.model;
 
 import lombok.Builder;
 import lombok.Data;
