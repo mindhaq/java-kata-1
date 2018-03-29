@@ -14,7 +14,7 @@ public class AuthorConstructorTest {
     private final AuthorConstructor authorConstructor = new AuthorConstructor();
 
     @Test
-    public void createsAuthorFromStrings() {
+    public void creates_author_from_strings() {
         // given
         String[] parts = new String[] {
                 "null-walter@echocat.org",
